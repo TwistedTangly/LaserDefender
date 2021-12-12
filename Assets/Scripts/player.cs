@@ -13,15 +13,16 @@ public class player : MonoBehaviour
     Vector2 rawInput;
     Vector2 minBounds;
     Vector2 maxBounds;
-    
-    private void Start() 
+
+    void Start() 
     {
         InitBounds();
     }
-    void Update()
+    
+    void Update() 
     {
         Move();
-    }
+    }                
 
     void InitBounds()
     {
@@ -32,15 +33,16 @@ public class player : MonoBehaviour
 
     private void Move()
     {
+        Debug.Log("Move");
         Vector3 delta = rawInput * speed * Time.deltaTime;
         Vector2 newPos = new Vector2();
         newPos.x = Mathf.Clamp(transform.position.x + delta.x, minBounds.x + paddingLeft, maxBounds.x - paddingRight);
         newPos.y = Mathf.Clamp(transform.position.y + delta.y, minBounds.y + paddingBottom, maxBounds.y - paddingTop);
         transform.position = newPos;
     }
-
     void OnMove(InputValue value)
     {
+        Debug.Log("OnMove");
         rawInput = value.Get<Vector2>();
     }
 }

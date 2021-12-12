@@ -10,6 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7338607212956001294}
   - component: {fileID: -4486030296994748549}
+  - component: {fileID: -2162542222880136353}
+  - component: {fileID: 1322013613206856003}
+  - component: {fileID: -497827220605238822}
+  - component: {fileID: -2329403196497740887}
   m_Layer: 0
   m_Name: Enemy 0
   m_TagString: Untagged
@@ -44,7 +48,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa617eb21e431847a9ba6d94f53a94d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfigSO: {fileID: 11400000, guid: fd034521ed29c8a40a3364d4c17b2aec, type: 2}
+--- !u!50 &-2162542222880136353
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789805201334373880}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &1322013613206856003
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789805201334373880}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.014821827}
+  serializedVersion: 2
+  m_Radius: 0.5148218
+--- !u!114 &-497827220605238822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789805201334373880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f6d7f29ac567d4da75b83a18bbd8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &-2329403196497740887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789805201334373880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08431dea8acb8944fa317762235da582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &5733375051160578940
 GameObject:
   m_ObjectHideFlags: 0
