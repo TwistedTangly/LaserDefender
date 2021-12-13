@@ -13,6 +13,11 @@ public class player : MonoBehaviour
     Vector2 rawInput;
     Vector2 minBounds;
     Vector2 maxBounds;
+    Shooter shooter;
+    private void Awake() 
+    {
+        shooter = GetComponent<Shooter>();
+    }
 
     void Start() 
     {
@@ -33,7 +38,6 @@ public class player : MonoBehaviour
 
     private void Move()
     {
-        Debug.Log("Move");
         Vector3 delta = rawInput * speed * Time.deltaTime;
         Vector2 newPos = new Vector2();
         newPos.x = Mathf.Clamp(transform.position.x + delta.x, minBounds.x + paddingLeft, maxBounds.x - paddingRight);
@@ -42,7 +46,14 @@ public class player : MonoBehaviour
     }
     void OnMove(InputValue value)
     {
-        Debug.Log("OnMove");
         rawInput = value.Get<Vector2>();
+    }
+
+    void OnFire(InputValue value) 
+    {
+        if(shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 }

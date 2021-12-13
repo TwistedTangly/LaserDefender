@@ -30,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
                 {
                     Instantiate(currentWave.GetEnemyPrefab(i), 
                                 currentWave.GetStartingWaypoint().position,
-                                Quaternion.identity,    //no rotation
+                                Quaternion.Euler(0,0,180),    
                                 transform); //become a child of the enemy spawner to free up the hierachy
                     yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
                 }
