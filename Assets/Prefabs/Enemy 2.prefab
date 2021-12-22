@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2329403196497740887}
   - component: {fileID: -145121480992380899}
   m_Layer: 7
-  m_Name: Enemy 0
+  m_Name: Enemy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  health: 20
+  health: 70
   score: 1
   Explosion: {fileID: 1420336932435353469, guid: 68ec8546d11ed864ab2e67d949a85d3a, type: 3}
   Hit: {fileID: 1420336932435353469, guid: fa4c290a93f1f994584d5901b2a78f56, type: 3}
@@ -130,9 +130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProjectilePrefab: {fileID: 208910424171586458, guid: 0f0a86e2afb86fb4eb267013d37d511a, type: 3}
-  ProjectileSpeed: 10
+  ProjectileSpeed: 20
   ProjectilelifeSpan: 5
-  BasefiringRate: 1
+  BasefiringRate: 2
   useAI: 1
   firingRateVarience: 0.5
   minimumFireRate: 0.1
@@ -209,7 +209,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9f20d5bf0ed19a74eb368a323cf0d37e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 612637992835611409e967eda8505d56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
