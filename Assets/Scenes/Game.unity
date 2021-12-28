@@ -954,6 +954,10 @@ PrefabInstance:
       propertyPath: TimeToChangeScene
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4845859800705393711, guid: 8515d1eaeeaa1704782871f8d0bb140c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8478587389942676560, guid: 8515d1eaeeaa1704782871f8d0bb140c, type: 3}
       propertyPath: m_RootOrder
       value: 1
