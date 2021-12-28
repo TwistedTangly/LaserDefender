@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -497827220605238822}
   - component: {fileID: -2329403196497740887}
   - component: {fileID: -145121480992380899}
+  - component: {fileID: -2487870079830189222}
   m_Layer: 7
   m_Name: Enemy 2
   m_TagString: Untagged
@@ -137,6 +138,20 @@ MonoBehaviour:
   firingRateVarience: 0.5
   minimumFireRate: 0.1
   isFiring: 0
+--- !u!114 &-2487870079830189222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789805201334373880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d55409e772b0d42a383668466fc781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 5775791088842068571, guid: e660a3bf89117644c9191adb2c3ec4ae, type: 3}
+  delay: 0.5
 --- !u!1 &5733375051160578940
 GameObject:
   m_ObjectHideFlags: 0

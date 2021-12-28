@@ -37,6 +37,14 @@ public class Health : MonoBehaviour
         }
     }
 
+    private void OnParticleCollision(GameObject other) 
+    {
+        TakeDamage(20);
+        audioPlayer.PlayHitClip();
+        PlayHitEffect();
+        Debug.Log("Particle Hit");
+    }
+
     private void ShakeCamera()
     {
         if(cameraShake != null && applyCameraShake)
